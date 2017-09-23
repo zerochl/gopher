@@ -11,7 +11,7 @@ import (
 )
 
 func init() {
-	parseJsonFile("etc/config.json", &Config)
+	parseJsonFile("../etc/config.json", &Config)
 	analyticsCode = getDefaultCode(Config.AnalyticsFile)
 	configGithubAuth()
 
